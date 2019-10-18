@@ -1,25 +1,29 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+// import logo from "./logo.svg";
+import "./App.css";
+import Layout from "./components/Layout";
+import Job from "/pages/job";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { Container, Row, Col } from "reactstrap";
+import Listing from "./components/Listing";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Layout>
+        <Container>
+          <Row>
+            <Col sm="12">
+              <h3 className="my-5">Category Title</h3>
+              <div className="list-wrapper my-5">
+                <Listing />
+              </div>
+            </Col>
+          </Row>
+        </Container>
+        <Route path="/pages/job" component={Job} />
+      </Layout>
+    </Router>
   );
 }
 

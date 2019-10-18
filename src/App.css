@@ -1,22 +1,29 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
+/*listings*/
+
+.listings img {
+  border-radius: 50%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.listings .listing {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  border-bottom: 1px solid #ffffff;
+  padding: 10px;
+  background: #d4f5fa;
 }
 
-.App-link {
-  color: #09d3ac;
+.listings .listing .listing-item {
+  flex: auto;
+  align-self: center;
+}
+.listings .listing .listing-item h5 {
+  word-break: break-word;
+}
+.listings .listing .listing-item:last-child {
+  text-align: right;
 }
