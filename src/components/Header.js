@@ -1,10 +1,13 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 const Header = () => {
   return (
     <div className="header text-white">
       <nav className="navbar navbar-dark bg-dark">
-        <a className="navbar-brand">Here Logo</a>
+        <Link to="/" className="navbar-brand">
+          Here Logo
+        </Link>
+        <Link to="/about">About us</Link>
         <form className="form-inline">
           <input
             className="form-control mr-sm-2"
