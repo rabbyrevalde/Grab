@@ -14,11 +14,10 @@ const Header = () => {
       <Navbar bg="dark" variant="dark" className="px-5">
         <Navbar.Brand href="/">
           <h3>Logo</h3>
-          <Link to="/about">About us</Link>
         </Navbar.Brand>
         <Nav className="ml-auto profile-wrap">
-          {/* <Nav.Link href="#features">Features</Nav.Link>
-          <Nav.Link href="#pricing">Pricing</Nav.Link> */}
+          {/* <Nav.Link href="#features">Features</Nav.Link> */}
+          <Nav.Link href="/about">About us</Nav.Link>
           <ListGroup horizontal>
             <ListGroup.Item className="pr-0 text-right">
               <span>
