@@ -3,18 +3,89 @@
   padding: 0;
   box-sizing: border-box;
 }
+.d-unset {
+  display: unset;
+}
+.bg-lightgray {
+  background: #f2f4f6;
+}
+/*header*/
+.header h3 {
+  color: #17a2b8;
+}
+.navbar {
+  background-color: #f9f9f9;
+}
+.list-group {
+  flex-direction: row !important;
+}
+.profile-wrap .list-group-item img {
+  width: 8%;
+  border-radius: 50%;
+  float: right;
+  border: 3px solid #17a2b8;
+}
+.profile-wrap .list-group-item {
+  border: unset;
+  background-color: unset;
+}
+.list-group-item button {
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: unset;
+  outline: none !important;
+  color: #17a2b8;
+}
+.list-group-item button:focus {
+  box-shadow: unset !important;
+}
+.list-group-item button:hover {
+  color: #17a2b8 !important;
+}
+.list-group-item button:active {
+  color: #17a2b8 !important;
+}
+.navbar-nav .dropdown-menu {
+  padding: 0;
+  overflow: hidden;
+}
+.list-group-item .dropdown {
+  align-self: center;
+}
+.list-group-item span {
+  margin-right: 20px;
+  position: relative;
+  font-size: 28px;
+}
+.list-group-item span i {
+  color: #17a2b8;
+  font-size: 28px;
+}
+.list-group-item span small {
+  background: #ffa500;
+  position: absolute;
+  border-radius: 50%;
+  left: 10px;
+  top: 0;
+  padding: 5px;
+  line-height: 9px;
+  font-size: 11px;
+}
 
 /*listings*/
-
+.table td {
+  border-top: 10px solid #f2f4f6 !important;
+  vertical-align: inherit !important;
+}
 .listings img {
   border-radius: 50%;
 }
 
 .listings .listing {
   display: flex;
-  border-bottom: 1px solid #ffffff;
+  border-bottom: 1px solid #d4f5fa;
   padding: 10px;
-  background: #d4f5fa;
+  /* background: #d4f5fa; */
 }
 
 .listings .listing .listing-item {
@@ -26,4 +97,33 @@
 }
 .listings .listing .listing-item:last-child {
   text-align: right;
+}
+.listings span i {
+  font-size: 25px;
+  font-weight: 600px;
+}
+.listings span input {
+  border: none;
+  font-size: 20px;
+  margin-left: 10px;
+  border-bottom: 1px solid transparent;
+  outline: none;
+  background: none;
+}
+.listings span input:focus {
+  border-color: lightgray !important;
+}
+
+/*SideBar*/
+
+.job-categories ul li {
+  padding: 10px 0;
+  font-family: "Raleway", Arial, Helvetica, sans-serif;
+}
+.job-categories ul li a {
+  color: #17a2b8;
+  text-decoration: none;
+}
+.job-categories ul li a:hover {
+  color: #093c44;
 }
