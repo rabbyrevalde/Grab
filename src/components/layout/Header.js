@@ -23,7 +23,7 @@ const Header = props => {
   const toggle = () => setIsOpen(!isOpen);
   return (
     <div>
-      <Navbar className="px-5 py-3" color="light" light expand="md">
+      <Navbar className="px-5 py-3 text-white" expand="md">
         <NavbarBrand href="/">Logo</NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
