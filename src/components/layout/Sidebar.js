@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Sidebar = () => {
   return (
     <div className="my-5">
-      <h4 className="my-3 border-bottom pb-2">JOB CATEGORIES</h4>
+      <h4 className="my-3 border-bottom pb-2">Impsum Nanatsu</h4>
       <div className="job-categories">
         <ul className="list-unstyled">
           <li className="text-uppercase">
